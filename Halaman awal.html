@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Card</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="bg-gray-100 min-h-screen flex items-center justify-center">
+    <div class="bg-white shadow-xl rounded-2xl p-8 w-[90%] max-w-md text-center">
+
+        <h1 class="text-2xl font-bold mb-6 text-gray-800">
+            Selamat Datang di Halaman Saya!
+        </h1>
+
+        <div class="flex flex-col gap-4">
+
+            <button onclick="goToBlog()"
+                class="bg-blue-500 hover:bg-blue-600 text-white py-3 rounded-xl transition duration-300">
+                🌐 Blog
+            </button>
+
+            <button onclick="goToContact()"
+                class="bg-green-500 hover:bg-green-600 text-white py-3 rounded-xl transition duration-300">
+                📞 Kontak Saya
+            </button>
+
+            <button onclick="goToCV()"
+                class="bg-purple-500 hover:bg-purple-600 text-white py-3 rounded-xl transition duration-300">
+                📄 CV Saya
+            </button>
+
+        </div>
+    </div>
+
+    <script>
+        function goToBlog() {
+            window.location.href = "BLOG/Castel himeji.html";
+        }
+
+        function goToContact() {
+            window.location.href = "Kontak saya.html";
+        }
+
+        function goToCV() {
+            window.location.href = "";
+        }
+    </script>
+</body>
+
+</html>
